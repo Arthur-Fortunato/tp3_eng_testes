@@ -1,0 +1,24 @@
+1. Criar um projeto usando maven ou algo do tipo, adicionar as dependencias do selenium, o junit... Ter os navegadores que vão ser usados no teste já instalados na máquina,
+criar uma classe de teste que vai fazer a automatização e rodar
+
+2. O WebDriverManager baixa sozinho a versão correta do driver de acordo com o navegador, faz o cache do driver e funciona em qualquer sistema operacional
+
+3. Entrar no mvnrepository, pegar a dependencia do selenium e jogar no pom.xml, vou mandar o exemplo usando o Selenium WebDriver e o WebDriverManager:
+só a parte de dependencies:
+<dependencies>
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.38.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <dependency>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>6.3.3</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+
+depois disso, criar a classe de teste e passar o WebDriver.

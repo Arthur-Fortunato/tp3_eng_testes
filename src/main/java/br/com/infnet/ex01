@@ -1,0 +1,9 @@
+1. WebDriver -> faz com que a gente consiga automatizar ações do navegador, controlando o mesmo por meio de código.
+GRID -> Permite a execução paralela de testes em várias ambientes e navegadores.
+IDE -> nos permite gravar e reproduzir ações do usuário.
+
+2. Usar o WebDriver é melhor em projetos que exigem flexibilidade, integração com frameworks e testes escaláveis.
+O Grid é quando precisamos de testes em larga escala e testes cross-browser ou testes paralelos
+
+3. O Selenium IDE não precisa que a pessoa saiba programar, gera scripts automaticamente e é fácil de usar.
+As limitações envolvem: Má integração com frameworks, dificuldade na manutenção de testes e não suporta uma lógica um pouco mais avançada com condições mais robustas
