@@ -1,0 +1,8 @@
+Q: Explique como o Selenium pode ser utilizado para verificar a URL da página e garantir que o login ou logout ocorreu corretamente.
+R: O método getUrl() retorna a url atual do navegador. Com isso, eu posso comparar a url atual com a esperada ou verificar
+se tem algum trecho que identifique a página que eu espero
+
+Q: Descreva como utilizar Cookies e Web Storage para armazenar sessões de usuários e evitar logins repetitivos.
+R: Os Cookies permitem manter o estado de autenticação entre páginas e visitas, isso evita logins repetidos enquanto o cookie não expira.
+O Web Storage armazena dados diretamente no navegador, como os tokens de autenticação e as preferências do usuário.
+Quando a aplicação encontra esse token no armazenamento, ela identifica que o usuário já está autenticado.

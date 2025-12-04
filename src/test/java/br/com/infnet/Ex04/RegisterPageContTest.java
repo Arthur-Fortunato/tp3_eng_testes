@@ -42,4 +42,25 @@ public class RegisterPageContTest extends BaseTest {
         Thread.sleep(2000);
         assertThat(errorMessage.getText(), containsString("invalid"));
     }
+
+    @Test
+    void deveTestarLogout() throws InterruptedException {
+        driver.navigate().to("https://practicetestautomation.com/practice-test-login/");
+        WebElement inputUsername = driver.findElement(By.id("username"));
+        WebElement inputPassword = driver.findElement(By.id("password"));
+        WebElement buttonSubmit = driver.findElement(By.id("submit"));
+
+        inputUsername.clear();
+        inputUsername.sendKeys("student");
+        inputPassword.clear();
+        inputPassword.sendKeys("Password123");
+        buttonSubmit.click();
+        Thread.sleep(2000);
+        assertThat(driver.getCurrentUrl(), containsString("logged-in-successfully"));
+
+        WebElement buttonLogout = driver.findElement(By.linkText("Log out"));
+        buttonLogout.click();
+        assertThat(driver.getCurrentUrl(), containsString("practice-test-login"));
+
+    }
 }

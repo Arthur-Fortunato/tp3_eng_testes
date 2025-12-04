@@ -1,0 +1,7 @@
+O teste foi feito no exercício 3
+
+Os campos de texto eu consegui pegar utilizando o findElement(By.id("elemento de texto que eu queria pegar")), dei clear nos campos
+e depois passei as chaves.
+Para lidar com o dropdown eu usei o org.openqa.selenium.support.ui.Select, ele me permitiu pegar o texto visível("Webmaster") e seleciona-lo
+
+Tive dificuldades com o iframe, assim como eu falei no exercício 3
